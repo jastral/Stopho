@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block head %}
+photoGallery
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div style="text-align: center; border:1px solid #999999; margin:3px auto; font-weight:bold;"> Results for "{{ search }}"</div>
+
+        {% for img in image %}
+            <div class="items container" style="display: inline; ">
+                <a href="{{ img.get_absolute_url }}" >
+                    <span><img src="{% if img.image %}{{ img.image.url }}{% endif%}" style="height:200px; width:270px; padding-top:20px;"/></span>
+                </a>
+                {{ img.description }}
+            </div>
+        {% endfor%}
+    </div>
+{% endblock %}

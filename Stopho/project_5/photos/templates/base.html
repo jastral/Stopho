@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <head>
+        <title>{% block head %}home{% endblock %}</title>
+        <link rel="stylesheet" href="{% static "photos/css/base.css" %}">
+        <link rel="stylesheet" href="{% static "photos/css/hdr.css" %} " />
+        <link rel="stylesheet" href="{% static "photos/css/bootstrap.min.css" %}" type="text/css" />
+    </head>
+    <body>
+        <div class="container jumbotron">
+            <img id="img" src="/static/photos/images/images4.jpg" />
+            <span id="hdr_txt">Stopho</span>
+        </div>
+        <div id="subheader" style="text-align:center;">
+            <div class="images">
+
+                <form method="post" action="/search/">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="text" placeholder="type the key here" id="search_box" name="key_search" style="padding-left:10px; border-radius: 7px;"/>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+        <div id="content">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

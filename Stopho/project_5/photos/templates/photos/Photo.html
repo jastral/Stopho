@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block head %}
+photoGallery
+{% endblock %}
+
+
+{% block body %}
+    <div id="outer_div" class="container">
+
+        <div class="items " style="display: inline; ">
+            {% for img in photos %}
+                <div style="display: inline; ">
+
+                    </span><img src="{% if img.image %}{{ img.image.url }}{% endif%}" style="height:200px; width:270px; padding-top:20px;"></span>
+
+              </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+.photo_display{
+	position: relative;
+	border: 2px solid red;
+	border-radius: 5px;
+
+}
+
+#add_photos{
+	cursor: pointer;
+}

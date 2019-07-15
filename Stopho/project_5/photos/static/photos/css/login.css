@@ -1,0 +1,58 @@
+body{
+	margin: 0px auto;
+	/* background-color:#d7d7d7; */
+	font-family: verdana;
+}
+
+.header{
+	height:80px;
+	background-color: #0066ff;
+	position: relative;
+}
+
+#hdr_txt{
+	color: white;
+	font-weight: bold;
+	font-size: 38px;
+	position: absolute;
+	top:15px;
+	left: 30px;
+}
+
+.fld{
+	width: 150px;
+}
+
+
+.wrap{
+	width:600px;
+	height:370px;
+	margin:auto;
+	margin-top:45px;
+	background-color: #0066ff;
+	color:blue;
+	text-align: left;
+	border-radius:18px;
+}
+
+#cap{
+	font-weight: bold;
+	font-size: 38px;
+}
+
+.table{
+	font-size: 23px;
+	margin-left:200px;
+	color: white;
+}
+
+#tbl1{
+	text-align: center;
+}
+
+#submit{
+	font-weight: bold;
+	font-size: 18px;
+	color: #0066ff;
+	background-color: white;
+}

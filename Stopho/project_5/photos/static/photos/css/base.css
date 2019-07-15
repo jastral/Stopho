@@ -1,0 +1,23 @@
+#subheader{
+    background-color: teal;
+    height: 40px;
+    padding-top: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.images{
+    font-weight: bold;
+}
+
+#search_box{
+    border-radius: 5px;
+}
+
+#add_btn{
+    float: right;
+    padding-right: 50px;
+}
+
+.items{
+    padding-top: 10px;
+}

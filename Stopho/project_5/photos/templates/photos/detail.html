@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+home
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <img src="{% if img.images %}{{ img.images.url }}{% endif%}" style="height:200px; width:270px; padding-top:20px; background-color:black"/>
+        <span style="color: white;">{{ img.description }}</span>
+    </div>
+{% endblock %}
